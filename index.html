@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Firda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fff1eb, #ace0f9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      border-radius: 28px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+      animation: fadeIn 1.2s ease;
+    }
+
+    .emoji {
+      font-size: 55px;
+      margin-bottom: 10px;
+      animation: float 2.5s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff7b7b;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .message {
+      background: #fff7f2;
+      border-radius: 18px;
+      padding: 18px;
+      margin: 20px 0;
+      border-left: 5px solid #ff9a9e;
+    }
+
+    .tips {
+      text-align: left;
+      background: #f7fbff;
+      padding: 18px;
+      border-radius: 18px;
+      margin-top: 15px;
+    }
+
+    .tips h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #5aa9e6;
+      text-align: center;
+    }
+
+    .tips ul {
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    button {
+      margin-top: 22px;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(255, 120, 120, 0.4);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ff6f91;
+      animation: fadeIn 1s ease;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="emoji">🌷</div>
+    <h1>Untuk Firda</h1>
+
+    <p>
+      Firda, semoga sakit lambungnya cepat membaik ya.
+      Jangan lupa istirahat yang cukup, makan pelan-pelan,
+      dan jangan telat makan lagi.
+    </p>
+
+    <div class="message">
+      Aku tahu rasanya pasti nggak enak, tapi kamu harus tetap semangat.
+      Semoga hari ini rasa sakitnya berkurang dan badan kamu bisa lebih nyaman.
+    </div>
+
+    <div class="tips">
+      <h2>Pengingat Kecil</h2>
+      <ul>
+        <li>Makan tepat waktu walaupun sedikit.</li>
+        <li>Hindari makanan pedas dan asam dulu.</li>
+        <li>Minum air hangat secukupnya.</li>
+        <li>Jangan terlalu banyak pikiran.</li>
+        <li>Kalau makin sakit, segera periksa ya.</li>
+      </ul>
+    </div>
+
+    <button onclick="showMessage()">Klik Pesan Ini</button>
+
+    <div id="secret" class="hidden">
+      Cepat sembuh ya, Firda. Kamu kuat, jangan lupa jaga diri 🤍
+    </div>
+
+    <div class="footer">
+      Dibuat khusus oleh wildan untuk Firda yang lagi sakit lambung
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
